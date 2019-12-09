@@ -1,0 +1,8 @@
+---
+- name: Tomcat deployment playbook
+  hosts: tomcatservers
+  remote_user: bondarenko
+  become: True
+  become_method: sudo
+  roles:
+    - tomcat
